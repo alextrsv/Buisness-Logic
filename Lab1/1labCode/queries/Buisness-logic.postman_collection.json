@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "bede1cb5-298c-4141-bde4-1fdad12b09e3",
+		"name": "Buisness-logic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Все курсы",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Курсы по области",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"area\": \"Компьютерные науки\",\r\n \"title\": \"Java\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/area-filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"area-filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Курсы по области и теме",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"area\": \"Компьютерные науки\",\r\n \"title\": \"C++\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/theme-filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"theme-filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Фильтрация",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": {\r\n        \"area\": \"Компьютерные науки\",\r\n        \"title\": \"IoT\"\r\n    },\r\n    \"levels\": [\r\n        0\r\n    ],\r\n    \"platforms\": [\r\n      \"\"\r\n    ],\r\n     \"leftDurationBorder\": 1,\r\n    \"rightDurationBorder\": 3,\r\n    \"markLeftBorder\": 4.5,\r\n    \"markRightBorder\": 4.8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Все области",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/category/areas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"areas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Все темы в области",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"area\":\"Компьютерные науки\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/category/area",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"area"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Записаться на курс",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Rolex\",\r\n    \"email\":\"dagrk.tds@yandex.ru\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/25/stud/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"25",
+						"stud",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
