@@ -1,0 +1,297 @@
+with customer_json (doc) as (
+    values
+    ('[
+      {
+        "course_id": 24,
+        "title": "Java Programming and Software Engineering Fundamentals",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Duke University",
+        "mark": 4.6
+      },
+      {
+        "course_id": 25,
+        "title": "Object Oriented Programming in Java",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Duke University",
+        "mark": 4.7
+      },
+      {
+        "course_id": 26,
+        "title": "Core Java",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "LearnQuest",
+        "mark": 4.4
+      },
+      {
+        "course_id": 27,
+        "title": "\nCoding for Everyone: C and C++",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "University of California, Santa Cruz",
+        "mark": 4.5
+      },
+      {
+        "course_id": 28,
+        "title": "HTML, CSS, and Javascript for Web Developers",
+        "level": 3,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Johns Hopkins University",
+        "mark": 4.8
+      },
+      {
+        "course_id": 29,
+        "title": "Start in Web",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "SuperUniversity",
+        "mark": 5.0
+      },
+      {
+        "course_id": 30,
+        "title": "Command Line in Linux",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Coursera Project Network",
+        "mark": 4.6
+      },
+      {
+        "course_id": 31,
+        "title": "\nLinux Server Management and Security",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "University of Colorado System",
+        "mark": 4.6
+      },
+      {
+        "course_id": 32,
+        "title": "Agile Development",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "University of Virginia",
+        "mark": 4.7
+      },
+      {
+        "course_id": 33,
+        "title": "Agile Leadership",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "University of Colorado System",
+        "mark": 4.7
+      },
+      {
+        "course_id": 34,
+        "title": "Agile with Atlassian Jira",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Atlassian",
+        "mark": 4.7
+      },
+      {
+        "course_id": 35,
+        "title": "Industrial IoT on Google Cloud Platform",
+        "level": 1,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Google Cloud",
+        "mark": 4.5
+      },
+      {
+        "course_id": 36,
+        "title": "\nAWS IoT: Developing and Deploying an Internet of Things",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Amazon Web Services",
+        "mark": 4.6
+      },
+      {
+        "course_id": 37,
+        "title": "Developing Industrial Internet of Things",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "University of Colorado Boulder",
+        "mark": 4.6
+      },
+      {
+        "course_id": 38,
+        "title": "Functional Programming in Scala",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "École Polytechnique Fédérale de Lausanne",
+        "mark": 4.7
+      },
+      {
+        "course_id": 39,
+        "title": "\nBig Data with Scala and Spark",
+        "level": 2,
+        "description": "очень итнересный курс",
+        "statDate": "2021-02-01",
+        "endDate": "2021-05-01",
+        "platform": "Coursera Project Network",
+        "mark": 4.5
+      },
+      {
+        "course_id": 40,
+        "title": "Master of Business Administration",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "University of Illinois",
+        "mark": 5.0
+      },
+      {
+        "course_id": 41,
+        "title": "Online Master''s of Accounting (iMSA)",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "University of Illinois at Urbana-Champaign",
+        "mark": 4.5
+      },
+      {
+        "course_id": 42,
+        "title": "Global Master of Business Administration (GMBA)",
+        "level": 1,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "Macquarie University",
+        "mark": 4.5
+      },
+      {
+        "course_id": 43,
+        "title": "Finanzas personales",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "universidad nacional autónoma de méxico",
+        "mark": 4.8
+      },
+      {
+        "course_id": 44,
+        "title": "Финансовые рынки",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "Yale University",
+        "mark": 4.8
+      },
+      {
+        "course_id": 45,
+        "title": "Маркетинг в цифровом мире",
+        "level": 1,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "ILLINOIS",
+        "mark": 4.7
+      },
+      {
+        "course_id": 46,
+        "title": "Маркетинг в социальных сетях от Facebook",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "Facebook",
+        "mark": 4.8
+      },
+      {
+        "course_id": 47,
+        "title": "Успешная карьера",
+        "level": 1,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "SuperUniversity",
+        "mark": 4.5
+      },
+      {
+        "course_id": 48,
+        "title": "Финансовые рынки",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "Yale University",
+        "mark": 4.8
+      },
+      {
+        "course_id": 49,
+        "title": "Principles of Sustainable Finance",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "erasmus university rotterdam",
+        "mark": 4.7
+      },
+      {
+        "course_id": 50,
+        "title": "Managing Emotions in Times of Uncertainty & Stress",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "Yale University",
+        "mark": 4.8
+      },
+      {
+        "course_id": 51,
+        "title": "Моральные основы политики",
+        "level": 2,
+        "description": "очень интересный курс",
+        "statDate": "2021-03-22",
+        "endDate": "2021-05-22",
+        "platform": "Yale University",
+        "mark": 4.8
+      }
+    ]'::json)
+)
+insert into courses (course_id, title, level, description, start_data, end_data, platform, mark)
+select p.*
+from customer_json l
+         cross join lateral json_populate_recordset(null::courses, doc) as p
+on conflict (course_id) do update
+    set title = excluded.title,
+        level = excluded.level,
+        description = excluded.description,
+        start_data = excluded.start_data,
+        end_data = excluded.end_data,
+        platform = excluded.platform,
+        mark = excluded.mark;

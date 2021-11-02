@@ -1,0 +1,35 @@
+active-mq:
+  broker-url: tcp://localhost:61616
+  queue: demo.queue
+
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIARDZ3MGFE73UXXNW2
+      secret-key: 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
+    region:
+      static: eu-north-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: pshoo-storage
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+  datasource:
+    url: jdbc:postgresql://ec2-54-72-155-238.eu-west-1.compute.amazonaws.com:5432/d1btcl8b2kat1l
+    username: ynvxspohpcclcw
+    password: 223557fc049187250f4b101c16e587a40aa3a3ba9b8fe97cff54a831c4a4e2b3
+
+
+
